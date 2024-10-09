@@ -1,0 +1,9 @@
+
+ctypes
+psutil
+termcolor
+colorama
+colored
+init
+Fore
+Style

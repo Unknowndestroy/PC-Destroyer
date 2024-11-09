@@ -8,7 +8,6 @@ from termcolor import colored
 init()
 
 def slow_print(text, delay=0.03, color=None, style=None):
-    """Metni yavaş yavaş yazdırmak için fonksiyon."""
     for char in text:
         if style:
             print(style, end="")
@@ -20,7 +19,6 @@ def slow_print(text, delay=0.03, color=None, style=None):
     print(Style.RESET_ALL)
 
 def print_banner():
-    """Renkli banner'ı ekrana ortalayarak yazdır."""
     banner = r"""
      _______    ______         _______                         __                                                       
     |       \  /      \       |       \                       |  \                                                      
@@ -70,7 +68,7 @@ def ram_faxter():
         while True:
             data.append(os.urandom(1024 * 1024 * 100))  
     except MemoryError:
-        slow_print("Ram Faxter işlemi tamamlandı.", delay=0.02, color="cyan")
+        slow_print("Ram Faxter completed.", delay=0.02, color="cyan")
 
 def gpu_destroyer():
     print(colored("GPU Destroyer working...", "cyan"))
